@@ -1,0 +1,48 @@
+[gd_scene load_steps=7 format=3 uid="uid://bloiqbtk00bs6"]
+
+[ext_resource type="Texture2D" uid="uid://cgrp0hdhrojnp" path="res://back_ground/ring_box.jpg" id="1_hc4b6"]
+[ext_resource type="PackedScene" uid="uid://docer7ng2vjm4" path="res://character.tscn" id="2_5f8j0"]
+[ext_resource type="PackedScene" uid="uid://caiwervjssf0q" path="res://platforme.tscn" id="3_lt60w"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_rlokk"]
+distance = 4.0
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_r7q3x"]
+normal = Vector2(-1, 0)
+distance = -55.0
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_iv586"]
+normal = Vector2(0.999885, -0.0151498)
+
+[node name="box fight" type="Node2D"]
+
+[node name="RingBox" type="Sprite2D" parent="."]
+position = Vector2(45, 12)
+scale = Vector2(0.128476, 0.124065)
+texture = ExtResource("1_hc4b6")
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("2_5f8j0")]
+position = Vector2(-41, 52)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(46, 20)
+scale = Vector2(0.00123024, -2.83792)
+zoom = Vector2(6, 6)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+position = Vector2(85, 2)
+
+[node name="bordeur 3" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(-137, 76)
+shape = SubResource("WorldBoundaryShape2D_rlokk")
+
+[node name="bordeur 2" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(5, 19)
+shape = SubResource("WorldBoundaryShape2D_r7q3x")
+
+[node name="bordeur 1" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(-136, 0)
+shape = SubResource("WorldBoundaryShape2D_iv586")
+
+[node name="platforme" parent="." instance=ExtResource("3_lt60w")]
+position = Vector2(16, 31)
