@@ -1,8 +1,9 @@
-[gd_scene load_steps=7 format=3 uid="uid://bsqd66tu2xvhx"]
+[gd_scene load_steps=8 format=3 uid="uid://bsqd66tu2xvhx"]
 
-[ext_resource type="Texture2D" uid="uid://cgrp0hdhrojnp" path="res://back_ground/ring_box.jpg" id="1_i6kb7"]
+[ext_resource type="Texture2D" uid="uid://sxogyo146jsm" path="res://back_ground/colisé.jpg" id="1_64rso"]
 [ext_resource type="PackedScene" uid="uid://bb7p4kpkkgj3x" path="res://character.tscn" id="2_om53s"]
 [ext_resource type="PackedScene" path="res://platforme.tscn" id="3_fag7v"]
+[ext_resource type="PackedScene" path="res://GAME/Boss.tscn" id="4_dtswr"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_rlokk"]
 distance = 4.0
@@ -16,16 +17,16 @@ normal = Vector2(0.999885, -0.0151498)
 
 [node name="box fight" type="Node2D"]
 
-[node name="RingBox" type="Sprite2D" parent="."]
-position = Vector2(45, 12)
-scale = Vector2(0.128476, 0.124065)
-texture = ExtResource("1_i6kb7")
+[node name="Colisé" type="Sprite2D" parent="."]
+position = Vector2(44.25, 15.5)
+scale = Vector2(0.319444, 0.37)
+texture = ExtResource("1_64rso")
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("2_om53s")]
 position = Vector2(-33, 46)
 
 [node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(46, 20)
+position = Vector2(44.6058, 17.4124)
 scale = Vector2(0.00123024, -2.83792)
 zoom = Vector2(6, 6)
 
@@ -46,3 +47,9 @@ shape = SubResource("WorldBoundaryShape2D_iv586")
 
 [node name="platforme" parent="." instance=ExtResource("3_fag7v")]
 position = Vector2(16, 31)
+
+[node name="fire_boss" parent="." instance=ExtResource("4_dtswr")]
+position = Vector2(65, 40)
+
+[node name="platforme2" parent="." instance=ExtResource("3_fag7v")]
+position = Vector2(81, 30)

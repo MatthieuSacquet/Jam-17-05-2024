@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-@onready var player = get_parent().find_child("player")
+@onready var player = get_parent().find_child("CharacterBody2D")
 @onready var sprite = $Sprite2D
 
 var direction : Vector2

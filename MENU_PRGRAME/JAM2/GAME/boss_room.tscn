@@ -1,7 +1,7 @@
-[gd_scene load_steps=3 format=3 uid="uid://cfoiauwyojjj7"]
+[gd_scene load_steps=3 format=3 uid="uid://dgdpnlgxni28o"]
 
-[ext_resource type="PackedScene" uid="uid://bi7f5tvaqmmh3" path="res://GAME/Boss.tscn" id="1_t1s3w"]
-[ext_resource type="PackedScene" uid="uid://dn8qfw3kc7df5" path="res://GAME/player.tscn" id="2_w86hw"]
+[ext_resource type="PackedScene" uid="uid://bi7f5tvaqmmh3" path="res://GAME/Level1.tscn" id="1_t1s3w"]
+[ext_resource type="PackedScene" path="res://GAME/player.tscn" id="2_w86hw"]
 
 [node name="BossRoom" type="Node2D"]
 
