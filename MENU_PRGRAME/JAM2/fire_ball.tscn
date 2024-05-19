@@ -53,3 +53,11 @@ frame_progress = 0.705571
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_tgiad")
+disabled = true
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("CircleShape2D_tgiad")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

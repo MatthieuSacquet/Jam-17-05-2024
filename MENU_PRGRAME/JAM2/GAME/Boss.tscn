@@ -321,7 +321,7 @@ _data = {
 height = 46.0
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_6ewfn"]
-radius = 1024.0
+radius = 441.677
 
 [node name="fire_boss" type="CharacterBody2D"]
 position = Vector2(659, 285)
@@ -388,14 +388,14 @@ position = Vector2(1, 0)
 collision_layer = 0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PlayerDetection"]
-position = Vector2(-3, 1)
+position = Vector2(-1, 0)
+scale = Vector2(-1.12536, 1.14172)
 shape = SubResource("CircleShape2D_6ewfn")
 
 [node name="StateMachine" type="Node2D" parent="."]
 script = ExtResource("4_tqdv5")
 
 [node name="Idle" type="Node2D" parent="StateMachine"]
-position = Vector2(-2, 0)
 script = ExtResource("3_jaal6")
 
 [node name="Follow" type="Node2D" parent="StateMachine"]
