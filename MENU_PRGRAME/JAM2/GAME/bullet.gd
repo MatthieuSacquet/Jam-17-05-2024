@@ -1,8 +1,9 @@
 extends Area2D
 
 @onready var animated_sprite = $AnimatedSprite2D
-@onready var player = get_parent().find_child("player")
- 
+@onready var player = get_parent().find_child("CharacterBody2D")
+
+
 var acceleration: Vector2 = Vector2.ZERO 
 var velocity: Vector2 = Vector2.ZERO
  
