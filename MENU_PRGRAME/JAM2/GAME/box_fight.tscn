@@ -22,7 +22,7 @@ scale = Vector2(0.128476, 0.124065)
 texture = ExtResource("1_i6kb7")
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("2_om53s")]
-position = Vector2(-41, 52)
+position = Vector2(-33, 46)
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(46, 20)
