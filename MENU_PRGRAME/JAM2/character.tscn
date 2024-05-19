@@ -45,19 +45,21 @@ radius = 4.12311
 [node name="CharacterBody2D" type="CharacterBody2D"]
 script = ExtResource("1_2wgx5")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+[node name="flip" type="Node2D" parent="."]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="flip"]
 z_index = 5
 position = Vector2(0, -1)
 sprite_frames = SubResource("SpriteFrames_ggmep")
 autoplay = "default"
 frame_progress = 0.0829969
 
+[node name="position" type="Marker2D" parent="flip"]
+position = Vector2(10, 2)
+
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, 2)
 shape = SubResource("CircleShape2D_jq35u")
-
-[node name="position" type="Marker2D" parent="."]
-position = Vector2(10, 2)
 
 [node name="Timer" type="Timer" parent="."]
 wait_time = 0.05

@@ -3,7 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://sxogyo146jsm" path="res://back_ground/colisé.jpg" id="1_64rso"]
 [ext_resource type="PackedScene" uid="uid://bb7p4kpkkgj3x" path="res://character.tscn" id="2_om53s"]
 [ext_resource type="PackedScene" path="res://platforme.tscn" id="3_fag7v"]
-[ext_resource type="PackedScene" path="res://GAME/Boss.tscn" id="4_dtswr"]
+[ext_resource type="PackedScene" uid="uid://ci06vu735bkqx" path="res://GAME/Boss.tscn" id="4_dtswr"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_rlokk"]
 distance = 4.0

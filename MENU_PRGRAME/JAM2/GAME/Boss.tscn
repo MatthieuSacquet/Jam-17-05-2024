@@ -1,4 +1,4 @@
-[gd_scene load_steps=27 format=3 uid="uid://bi7f5tvaqmmh3"]
+[gd_scene load_steps=27 format=3 uid="uid://ci06vu735bkqx"]
 
 [ext_resource type="Texture2D" uid="uid://du1qq28wg3arx" path="res://asset/Mecha-stone Golem 0.1/PNG sheet/Character_sheet.png" id="1_0jbbq"]
 [ext_resource type="Script" path="res://GAME/fireboss.gd" id="1_uxxeq"]
@@ -9,7 +9,7 @@
 [ext_resource type="Script" path="res://GAME/MeleeAttack.gd" id="7_dp60s"]
 [ext_resource type="Script" path="res://GAME/Laser.gd" id="8_mh860"]
 [ext_resource type="Script" path="res://GAME/HomingMissile.gd" id="9_xjbbp"]
-[ext_resource type="PackedScene" uid="uid://dipu7ho3v7k8w" path="res://GAME/bullet.tscn" id="10_qghw3"]
+[ext_resource type="PackedScene" path="res://GAME/bullet.tscn" id="10_qghw3"]
 [ext_resource type="Script" path="res://GAME/Dash.gd" id="11_uhw5r"]
 [ext_resource type="Script" path="res://GAME/ArmorBuff.gd" id="11_yvxd5"]
 [ext_resource type="Script" path="res://GAME/Death.gd" id="13_xw0jy"]

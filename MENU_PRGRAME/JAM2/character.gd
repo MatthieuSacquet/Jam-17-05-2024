@@ -31,12 +31,18 @@ func _physics_process(delta):
 	if Input.is_key_pressed(KEY_F) and fire_ball_cooldown and fire_ball_equiped:
 		can_shot = false
 		$Timer.start()
+	
+	if Input.is_key_pressed(KEY_LEFT):
+		$flip.scale.x = -1
+	elif Input.is_key_pressed(KEY_RIGHT):
+		$flip.scale.x = 1
 
 	move_and_slide()
 
+
 func _on_timer_timeout():
 	var k = fire_ball.instantiate()
-	k.global_position = $position.global_position
-	k.vel = 1
+	k.global_position = $flip/position.global_position
+	k.vel = $flip.scale.x
 	get_parent().add_child(k)
 	can_shot = true
