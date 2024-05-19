@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://cfoiauwyojjj7"]
+
+[ext_resource type="PackedScene" uid="uid://bi7f5tvaqmmh3" path="res://GAME/Boss.tscn" id="1_t1s3w"]
+[ext_resource type="PackedScene" uid="uid://dn8qfw3kc7df5" path="res://GAME/player.tscn" id="2_w86hw"]
+
+[node name="BossRoom" type="Node2D"]
+
+[node name="player" parent="." instance=ExtResource("2_w86hw")]
+position = Vector2(315, 392)
+
+[node name="fire_boss" parent="." instance=ExtResource("1_t1s3w")]
+position = Vector2(700, 311)
+scale = Vector2(2.69989, 2.79799)
